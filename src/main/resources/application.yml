@@ -21,7 +21,9 @@ spring:
     basename: i18n/messages
   profiles: 
     active: druid
-    
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
 # mybatis-plus配置
 mybatis-plus:
   # 枚举包扫描
@@ -31,3 +33,7 @@ mybatis-plus:
   configuration:
     # sql日志打印
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    root: debug
